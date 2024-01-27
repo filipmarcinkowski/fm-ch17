@@ -58,50 +58,59 @@ body {
   /* border: solid 0.2rem red; */
   grid-template-columns: 1fr 1fr;
 
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* ///////////////////////images //////////////////////////*/
 
-.image__box {
-  position: absolute;
-  border: solid 0.2rem orangered;
-  top: 0;
-  left: 0;
-  /* left: -20%; */
-  /* top: 35%; */
-
-  /* transform: translate(50%, 0); */
-  z-index: 100;
-}
-
 .images-container {
-  /* height: 100%; */
+  height: 100%;
   display: grid;
   justify-content: left;
   align-items: center;
-  border: solid 0.2rem red;
-  position: relative;
-  z-index: 1;
-  max-width: 80rem;
+
+  border: solid 0.2rem pink;
+  /* position: relative; */
+  /* z-index: 1; */
 }
 
-.image {
+/* no overflow */
+.image__box {
+  position: absolute;
+  border: solid 0.2rem orangered;
+  left: -20%;
+  top: 35%;
+
+  z-index: 100;
+}
+
+/* overflow */
+
+.images__no-overflow {
+  border: solid 0.2rem black;
+  height: 100%;
+  display: grid;
+  justify-content: left;
+  align-items: center;
+
+  /* position: relative; */
+  z-index: 1;
 }
 
 .image__woman {
   overflow: hidden;
-  /* position: absolute; */
+  /* position: relative; */
   border: solid 0.2rem blue;
   z-index: 10;
   margin-left: -9rem;
 }
 
 .image__bg {
-  overflow: hidden;
+  /* overflow: hidden; */
   position: absolute;
 
-  top: -100%;
+  top: 0;
+  /* top: -100%; */
   right: 15%;
 
   border: solid 0.2rem greenyellow;
