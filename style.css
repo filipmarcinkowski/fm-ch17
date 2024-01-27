@@ -44,7 +44,6 @@ body {
   display: grid;
   justify-content: center;
   align-content: center;
-  border: solid 0.2rem red;
 }
 
 .main-container {
@@ -55,31 +54,28 @@ body {
   display: grid;
   justify-content: center;
   align-items: center;
-  /* border: solid 0.2rem red; */
   grid-template-columns: 1fr 1fr;
-
-  /* overflow: hidden; */
 }
 
 /* ///////////////////////images //////////////////////////*/
 
 .images-container {
+  /* border: solid 0.2rem pink; */
   height: 100%;
   display: grid;
   justify-content: left;
   align-items: center;
 
-  border: solid 0.2rem pink;
-  /* position: relative; */
-  /* z-index: 1; */
+  position: relative;
 }
 
 /* no overflow */
 .image__box {
+  /* border: solid 0.2rem orangered; */
   position: absolute;
-  border: solid 0.2rem orangered;
-  left: -20%;
-  top: 35%;
+  left: 0;
+  top: 50%;
+  transform: translate(-48%, -25%);
 
   z-index: 100;
 }
@@ -87,46 +83,39 @@ body {
 /* overflow */
 
 .images__no-overflow {
-  border: solid 0.2rem black;
+  /* border: solid 0.2rem black; */
   height: 100%;
   display: grid;
   justify-content: left;
   align-items: center;
 
-  /* position: relative; */
-  z-index: 1;
+  overflow: hidden;
+
+  position: relative;
 }
 
 .image__woman {
-  overflow: hidden;
-  /* position: relative; */
-  border: solid 0.2rem blue;
+  /* border: solid 0.2rem blue; */
   z-index: 10;
   margin-left: -9rem;
 }
 
 .image__bg {
-  /* overflow: hidden; */
+  /* border: solid 0.2rem greenyellow; */
   position: absolute;
-
-  top: 0;
-  /* top: -100%; */
-  right: 15%;
-
-  border: solid 0.2rem greenyellow;
-  z-index: 5;
+  top: -58%;
+  right: 0;
 }
 
 /* ///////////////////////accordion //////////////////////////*/
 
 .accordion-box {
-  border: solid 0.2rem greenyellow;
+  /* border: solid 0.2rem greenyellow; */
   margin: var(--s-h) var(--s-hh) var(--s-h) 0;
 }
 
 h3 {
   font-size: 3rem;
-  /* font-weight: ; */
 }
 
 .faq-box {
