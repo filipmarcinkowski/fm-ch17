@@ -69,7 +69,7 @@ body {
   position: relative;
 }
 
-/* no overflow */
+/********* no overflow *************/
 .image__box {
   /* border: solid 0.2rem orangered; */
   position: absolute;
@@ -80,18 +80,18 @@ body {
   z-index: 100;
 }
 
-/* overflow */
+/*********** overflow ****************/
 
 .images__no-overflow {
   /* border: solid 0.2rem black; */
   height: 100%;
+
   display: grid;
   justify-content: left;
   align-items: center;
 
-  overflow: hidden;
-
   position: relative;
+  overflow: hidden;
 }
 
 .image__woman {
@@ -122,7 +122,17 @@ h3 {
 }
 .faq-box:hover {
   color: var(--clr-secendary-900);
+  cursor: pointer;
 }
+/* /////////////////////////////////////////////// */
+.faq-box:hover .image__box {
+  position: absolute;
+  left: -40%;
+  top: 50%;
+  transform: translate(-90%, -25%);
+}
+/* /////////////////////////////////////////////// */
+
 .faq-box:hover .answer-box {
   grid-template-rows: 1fr;
   padding-bottom: var(--s-s);
