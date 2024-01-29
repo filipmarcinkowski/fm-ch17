@@ -1,25 +1,61 @@
 @media (max-width: 35em) {
   .main-container {
     grid-template-columns: 1fr;
-    margin: 4rem;
+    margin: 2rem;
+    max-width: 32rem;
   }
 
   .images-container {
-    justify-content: center;
+    /* border: solid 0.2rem pink; */
+    height: 10rem;
+    /* width: 10rem; */
+    /* display: flex; */
+    /* justify-content: center; */
+    position: relative;
   }
 
+  .image__box {
+    /* border: solid 0.2rem orangered; */
+
+    height: 9rem;
+    width: auto;
+
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    transform: translate(-50%, -70%);
+  }
+
+  /*********** overflow ****************/
   .images__no-overflow {
     /* border: solid 0.2rem black; */
+    width: 100%;
 
-    justify-content: center;
     position: absolute;
+    overflow: visible;
   }
 
   .image__woman {
-    border: solid 0.2rem blue;
-    z-index: 10;
+    /* border: solid 0.2rem blue; */
+    height: 18rem;
+    width: auto;
     margin-left: 0;
-    transform: scale(0.5);
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    position: absolute;
+  }
+
+  .image__bg {
+    /* border: solid 0.2rem greenyellow; */
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    height: 23rem;
+    width: auto;
+
+    transform: translate(-50%, -55%);
   }
 
   /* ///////////////////////accordion //////////////////////////*/
