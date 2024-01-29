@@ -119,6 +119,7 @@ h3 {
 }
 
 .faq-box {
+  border-bottom: solid 0.1rem var(--clr-gray-200);
 }
 .faq-box:hover {
   color: var(--clr-secendary-900);
@@ -158,10 +159,6 @@ h3 {
   display: grid;
   grid-template-rows: 0fr;
   transition: grid-template-rows 0.3s;
-}
-
-.faq-box:not(:last-child) {
-  border-bottom: solid 0.1rem var(--clr-gray-200);
 }
 
 .answer-text {
