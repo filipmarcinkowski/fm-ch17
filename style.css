@@ -105,8 +105,10 @@ body {
 }
 
 .image__bg {
+  /* border: solid 0.2rem red; */
   position: absolute;
-  top: -58%;
+  top: auto;
+  /* top: -58%; */
   right: 0;
   height: auto;
 }
