@@ -62,7 +62,6 @@ body {
 /* ///////////////////////images //////////////////////////*/
 
 .images-container {
-  /* border: solid 0.2rem pink; */
   height: 100%;
 
   display: grid;
@@ -74,19 +73,22 @@ body {
 
 /********* no overflow *************/
 .image__box {
-  /* border: solid 0.2rem orangered; */
   position: absolute;
   left: 0;
   top: 50%;
   transform: translate(-48%, -25%);
+  transition: transform 0.3s;
 
   z-index: 100;
+}
+
+.take-box {
+  transform: translate(-65%, -25%);
 }
 
 /*********** overflow ****************/
 
 .images__no-overflow {
-  /* border: solid 0.2rem black; */
   height: 100%;
 
   display: grid;
@@ -98,17 +100,11 @@ body {
 }
 
 .image__woman {
-  /* border: solid 0.2rem blue; */
   z-index: 10;
   margin-left: -9rem;
-  /* max-width: 100%; */
-
-  /* width: auto; */
-  /* max-height: 100%; */
 }
 
 .image__bg {
-  /* border: solid 0.2rem greenyellow; */
   position: absolute;
   top: -58%;
   right: 0;
@@ -118,7 +114,6 @@ body {
 /* ///////////////////////accordion //////////////////////////*/
 
 .accordion-box {
-  /* border: solid 0.2rem greenyellow; */
   margin: var(--s-h) var(--s-hh) var(--s-h) 0;
 }
 
@@ -133,14 +128,6 @@ h3 {
   color: var(--clr-secendary-900);
   cursor: pointer;
 }
-/* /////////////////////////////////////////////// */
-.faq-box:hover .image__box {
-  position: absolute;
-  left: -40%;
-  top: 50%;
-  transform: translate(-90%, -25%);
-}
-/* /////////////////////////////////////////////// */
 
 .question-box {
   display: flex;
@@ -173,12 +160,6 @@ h3 {
   color: var(--clr-gray-800);
   overflow: hidden;
 }
-/* /////////////////////////////////////////// */
-
-/* .faq-box:hover .answer-box {
-  grid-template-rows: 1fr;
-  padding-bottom: var(--s-s);
-} */
 
 .open {
   grid-template-rows: 1fr;

@@ -6,17 +6,11 @@
   }
 
   .images-container {
-    /* border: solid 0.2rem pink; */
     height: 10rem;
-    /* width: 10rem; */
-    /* display: flex; */
-    /* justify-content: center; */
     position: relative;
   }
 
   .image__box {
-    /* border: solid 0.2rem orangered; */
-
     height: 9rem;
     width: auto;
 
@@ -26,9 +20,7 @@
     transform: translate(-50%, -70%);
   }
 
-  /*********** overflow ****************/
   .images__no-overflow {
-    /* border: solid 0.2rem black; */
     width: 100%;
 
     position: absolute;
@@ -36,24 +28,24 @@
   }
 
   .image__woman {
-    /* border: solid 0.2rem blue; */
     height: 18rem;
     width: auto;
     margin-left: 0;
+
+    position: absolute;
     top: 0;
     left: 50%;
+
     transform: translate(-50%, -60%);
-    position: absolute;
   }
 
   .image__bg {
-    /* border: solid 0.2rem greenyellow; */
+    height: 23rem;
+    width: auto;
+
     position: absolute;
     top: 0;
     left: 50%;
-
-    height: 23rem;
-    width: auto;
 
     transform: translate(-50%, -55%);
   }
